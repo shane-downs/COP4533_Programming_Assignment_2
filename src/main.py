@@ -25,8 +25,8 @@ def build_caches(k, requests):
     return fifo_cache, lru_cache, optff_cache
 
 def write_output(fifo_cache, lru_cache, optff_cache):
-    filename_raw = "." + sys.argv[1]
-    output_file = filename_raw.replace("/input/", "/output/").replace(".in", ".out")
+    filename_raw = "./" + sys.argv[1]
+    output_file = filename_raw.replace("input/", "output/").replace(".in", ".out")
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w") as f:
         f.write(f"FIFO  : {fifo_cache.misses}\n")
