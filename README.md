@@ -18,11 +18,18 @@ COP4533_Programming_Assignment_2/
 │   ├── LRU.py
 │   └── OPTFF.py
 ├── input/
+│   ├── example.in
+│   ├── question_2.in
 │   ├── test1.in
 │   ├── test2.in
 │   └── test3.in
 ├── output/
 │   └── (generated .out files)
+├── tests/
+├── Written_Responses/
+│   ├── Question_1.md
+│   └── Question_2.md
+├── .gitignore
 └── README.md
 ```
 
