@@ -32,4 +32,7 @@ The same logic applies if we fast-forward 3 iteration steps and come across
 job with id 3 once again. OPTFF kept 3 because it looked ahead and saw it came
 right after the sequence 7, 8, 9. LRU and FIFO will miss while OPTFF knew 3 was coming
 again and kept it in the cache opting to evict 2 because it knows it will
-not come up again in the future.
+not come up again in the future. We see from this example that OPTFF will
+hit 2 more times than FIFO and LRU which means it has 2 fewer misses exactly.
+Thus, OPTFF wins out against the other eviction policies with 9 misses opposed to 11.
+OPTFF will always have fewer misses with k = 3 and this sequence.
