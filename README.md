@@ -1,5 +1,8 @@
 # COP4533 Programming Assignment 2 — Cache Eviction Policies
 
+## Names and UFID
+Shane Downs: 92052913
+
 ## Overview
 
 This program implements and compares three cache eviction policies on a given request sequence:
